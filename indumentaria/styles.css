@@ -1,0 +1,328 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #000000;
+}
+
+/* Encabezado */
+header {
+    background-color:rgb(0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Estilo para tablas */
+.table {
+    width: 80%; /* Ajusta según el tamaño que prefieras */
+    max-width: 1200px; /* Ancho máximo de la tabla */
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff; /* Borde general de la tabla */
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #000; /* Líneas de separación más visibles */
+}
+
+.table th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid red; /* Separación más marcada en el encabezado */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table tr:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+/* Asegurar contraste de los bordes */
+.table td {
+    border: 1px solid #333; /* Color de borde ligeramente más oscuro */
+}
+/* Botones */
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Formularios */
+form {
+    margin-bottom: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor:pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+/* Estilos del Menú */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita scroll horizontal no deseado */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.menu-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Oculto en pantallas grandes */
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: red;
+}
+
+/* Estilo para dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón toggle en pantallas pequeñas */
+    }
+
+    .menu-links {
+        flex-direction: column;
+        position:relative; /* Fijo para que siempre esté visible */
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 10vh; /* Ocupa toda la altura de la pantalla */
+        background-color: rgb(255, 255, 255);
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+        display: none; /* Oculto por defecto */
+        z-index: 999;
+        box-shadow: 0 4px 6px rgb(255, 0, 0);
+    }
+
+    .menu-links.show {
+        display: flex; /* Mostrar el menú al hacer clic */
+    }
+
+    .menu-links a {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .menu-links a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Contenedor principal */
+.container {
+    margin: 80px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(255, 252, 252);
+}
+/* Tablas */
+
+/* Estilo para las Cards */
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-card-body {
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.product-card-body h5 {
+    margin: 0 0 10px;
+}
+
+.product-card-body p {
+    margin: 5px 0;
+}
+
+.product-card-body .btn-custom {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.product-card-body .btn-custom:hover {
+    background-color: #ff0000;
+}
+
+.product-card-body form button {
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+/* Asegurando que el fondo de la página sea negro */
+body.bg-dark {
+    background-color: #000;
+    color: #000000; /* Color de texto blanco para que sea legible en fondo oscuro */
+}
+
+/* Estilo para los botones de la tabla */
+table .btn {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/* Asegura que el contenedor de la tabla esté bien alineado y se vea limpio */
+.table-dark {
+    background-color: #000000;
+    color: #000000;
+}
